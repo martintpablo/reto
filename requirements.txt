@@ -1,3 +1,5 @@
 streamlit
 pandas
 pinecone-client
+openai==0.28
+python-dotenv

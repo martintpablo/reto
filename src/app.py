@@ -41,9 +41,14 @@ with col2:
     #     # To read file as string:
     #     string_data = stringio.read()
 
+def subir_archivo(ruta):
+    pinecone.create_index("my_index")
+    with open(document_path, "rb") as f:
+        pinecone.upsert(items=f, ids=[document_path])
+
 if st.button('Realizar pregunta'):
     if archivo_subido is not None:
         st.write('Funciona todo, tanto el botón como el subir archivos')
-        
+        subir_archivo(archivo_subido)
     else:
         st.write('Funciona el botón')
