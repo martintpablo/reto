@@ -5,8 +5,8 @@ from pinecone import Pinecone
 
 
 # Define tus credenciales de API de Pinecone
-api_key = "ecd9d0da-316a-46c5-ad95-919541600f79"  
-pinecone_index_name = "reto"  # Reemplaza "NOMBRE_DE_TU_ÍNDICE" con el nombre de tu índice en Pinecone
+api_key = "fca688a9-3531-434d-80da-2e8e55c857b2"
+pinecone_index_name = "fp-incompany-index"  # Reemplaza "NOMBRE_DE_TU_ÍNDICE" con el nombre de tu índice en Pinecone
 
 # Inicializa el cliente de Pinecone
 pinecone = Pinecone(api_key=api_key)
