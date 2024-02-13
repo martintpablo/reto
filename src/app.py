@@ -42,7 +42,7 @@ with col2:
     #     string_data = stringio.read()
 
 def subir_archivo(ruta):
-    pinecone.create_index("my_index")
+    pinecone.create_index("reto")
     with open(document_path, "rb") as f:
         pinecone.upsert(items=f, ids=[document_path])
 
